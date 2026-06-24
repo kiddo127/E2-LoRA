@@ -1,0 +1,42 @@
+
+{
+    "prefix": "Reproduce",
+    "dataset": "officehome",
+    "task_name": ["Art", "Clipart", "Product", "Real_World"],
+    "data_path": "/path/to/OfficeHome",
+
+    "memory_size": 0,
+    "memory_per_class": 0,
+    "fixed_memory": true,
+    "shuffle": false,
+    "init_cls": 65,
+    "increment": 65,
+    "total_sessions" : 4,
+
+    "model_name": "e2lora",
+    "net_type": "vit",
+    "backbone": "vit_base_patch16_224",
+    "embd_dim" : 768,
+
+    "seed": [1993],
+    "EPSILON" : 1e-8,
+
+    "merge_scalar": 0.25,
+    "head_merge_ratio": 0.25,
+    "ot_reg": 0.1,
+
+    "lr_re": 1e-3,
+    "epc_re": 5,
+
+    "bcb_lrscale": 0.005,
+    "ca_epochs": 5,
+
+    "epochs" : 15,
+    "lrate" : 0.1,
+    "milestones": [60, 100, 140],
+    "lrate_decay" : 0.1,
+    "weight_decay" : 5e-4,
+
+    "batch_size" : 64,
+    "num_workers" : 16
+}

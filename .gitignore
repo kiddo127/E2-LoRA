@@ -1,0 +1,10 @@
+data/
+logs/
+.idea/
+__pycache__/
+*.py[cod]
+*.ipynb
+*.pdf
+*.pkl
+*.pth
+.DS_Store

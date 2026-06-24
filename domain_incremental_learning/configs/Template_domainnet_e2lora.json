@@ -1,0 +1,36 @@
+{
+    "prefix": "Reproduce",
+    "dataset": "domainnet",
+    "task_name": ["clipart", "infograph", "painting", "quickdraw", "real", "sketch"],
+    "data_path": "/path/to/DomainNet",
+
+    "memory_size": 0,
+    "memory_per_class": 0,
+    "fixed_memory": true,
+    "shuffle": false,
+    "init_cls": 345,
+    "increment": 345,
+    "total_sessions" : 6,
+
+    "model_name": "e2lora",
+    "net_type": "vit",
+    "backbone": "vit_base_patch16_224",
+
+    "merge_scalar": 0.25,
+    "head_merge_ratio": 0.25,
+    "lr_re": 1e-3,
+    "epc_re": 5,
+    "embd_dim" : 768,
+    "bcb_lrscale": 0.01,
+    "ca_epochs": 3,
+    "epochs" : 15,
+    "lrate" : 0.1,
+    "milestones": [60, 100, 140],
+    "seed": [1993],
+    "EPSILON" : 1e-8,
+    "ot_reg": 0.01,
+    "lrate_decay" : 0.1,
+    "weight_decay" : 5e-4,
+    "batch_size" : 64,
+    "num_workers" : 16
+}
