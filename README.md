@@ -1,6 +1,6 @@
 # E²-LoRA: Energy-Efficient Low-Rank Adaptation for Continual Learning
 
-Official implementation of **E²-LoRA** — a method that mitigates catastrophic forgetting in continual learning via output feature drift-aware low-rank adaptation.
+Official implementation of [**E²-LoRA**](https://arxiv.org/abs/2605.27482) — a method that mitigates catastrophic forgetting in continual learning via output feature drift-aware low-rank adaptation.
 
 ## Method Overview
 
