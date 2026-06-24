@@ -63,11 +63,11 @@ See [class_incremental_learning/README.md](class_incremental_learning/README.md)
 ## Citation
 
 ```bibtex
-@inproceedings{e2lora2026,
-  title     = {E²-LoRA: Energy-Efficient Low-Rank Adaptation for Continual Learning},
-  author    = {},
-  booktitle = {International Conference on Machine Learning (ICML)},
-  year      = {2026}
+@article{li2026energy,
+  title={Energy-Structured Low-Rank Adaptation for Continual Learning},
+  author={Li, Longhua and Qi, Lei and Tian, Qi and Geng, Xin},
+  journal={arXiv preprint arXiv:2605.27482},
+  year={2026}
 }
 ```
 
