@@ -4,7 +4,7 @@ Official implementation of **E²-LoRA** — a method that mitigates catastrophic
 
 ## Method Overview
 
-E²-LoRA assigns independent LoRA modules ($\Delta W = BA$) to each task. After training, PCA (SVD) is performed on the LoRA-induced output feature drift matrix $\Delta Y = BAX$, producing an orthonormal basis $U$ sorted by singular value energy. LoRA parameters $B$ are aligned to this basis, concentrating knowledge into high-energy ranks. When new tasks arrive, low-energy ranks of old tasks are released (based on an energy retention threshold $\rho$) and re-initialized as new task parameters (frozen $B$, trainable $A$). A dynamic rank allocation scheme jointly considers old-task energy retention and new-task minimum rank requirements.
+E²-LoRA assigns independent LoRA modules ($\Delta W = BA$) to each task. After training, PCA (SVD) is performed on the LoRA-induced output feature drift matrix $\Delta Y = BAX$, producing an orthonormal basis $U$ sorted by singular value energy. LoRA parameters $B$ are aligned to this basis, concentrating knowledge into high-energy ranks. When new tasks arrive, low-energy ranks of old tasks are released and re-initialized as new task parameters. A dynamic rank allocation scheme jointly considers old-task energy retention and new-task minimum rank requirements.
 
 Auxiliary techniques include self-distillation on old class logits and classifier alignment via class-Gaussian sampling.
 
