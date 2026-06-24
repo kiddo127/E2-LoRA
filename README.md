@@ -15,6 +15,7 @@ Auxiliary techniques include self-distillation on old class logits and classifie
 ### Class-Incremental Learning
 
 ![CIL Results](figs/cil_results.png)
+![CIL Results](figs/cil_curve.png)
 
 ### Domain-Incremental Learning
 
