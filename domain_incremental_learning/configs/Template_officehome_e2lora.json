@@ -28,11 +28,11 @@
     "lr_re": 1e-3,
     "epc_re": 5,
 
-    "bcb_lrscale": 0.005,
-    "ca_epochs": 5,
+    "bcb_lrscale": 0.05,
+    "ca_epochs": 3,
 
     "epochs" : 15,
-    "lrate" : 0.1,
+    "lrate" : 0.01,
     "milestones": [60, 100, 140],
     "lrate_decay" : 0.1,
     "weight_decay" : 5e-4,
