@@ -9,6 +9,7 @@ import numpy as np
 from utils import factory
 from utils.data_manager import DataManager
 from utils.toolkit import count_parameters
+import torch.nn as nn
 
 
 def train(args):
@@ -49,6 +50,9 @@ def _train(args):
     data_manager = DataManager(args['dataset'], args['shuffle'], args['seed'], args['init_cls'], args['increment'], args)
     args['class_order'] = data_manager._class_order
     model = factory.get_model(args['model_name'], args)
+
+    nn.init.ones_(model._network.backbone.norm.weight)
+    nn.init.zeros_(model._network.backbone.norm.bias)
 
     acc_curve, nme_curve = {'top1': []}, {'top1': []}
     acc_matrix = []
